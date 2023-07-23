@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="text-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" class="w-4 h-14 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-9 text-xl">REAL TIME WEATHER FORECAST</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-red-500" href="/home.html">HOME</a>
+            <a class="mr-5  hover:text-red-500"  href="/weather.html" >WEATHER</a>
+          </nav>
+          <a href="weather.html">
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" >⬅️⬇️
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </a >
+        </div>
+      </header>
+    
+<section class="text-gray-600 body-font">
+    <div class="container px-6 py-20 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+        <div class="w-full sm:p-4 px-4 mb-6">
+          <h1 class="title-font font-medium text-xl mb-2 text-gray-900">REAL TIME WEATHER FROECAST</h1>
+          <div class="leading-relaxed">This website will tell you about real time weather details by fetching a website world air Qualityindex api.</div>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-cyan-900">121</h2>
+          <p class="leading-relaxed">NO. of country</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-gray-900">95%</h2>
+          <p class="leading-relaxed">ACCURACY</p>
+        </div>
+        <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+          <h2 class="title-font font-medium text-3xl text-cyan-400">1</h2>
+          <p class="leading-relaxed">MEMBERS</p>
+        </div>
+        
+      </div>
+   
+        <div class="map">
+        <iframe width="400" height="400" style="opacity: 0.9;" src="https://embed.windy.com/embed2.html?lat=14.520&lon=79.014&detailLat=21.997&detailLon=79.001&width=400&height=450&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=1" frameborder="0"></iframe>
+    </div>
+
+
+      </div>
+      
+    </div>
+    
+  </section>
+    
+</body>
+</html>
